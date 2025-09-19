@@ -10,3 +10,9 @@ library(moderndive)
 library(ggplot2)
 library(tidyverse)
 ```
+
+# Problem 1
+
+```{r echo=FALSE}
+data("early_january_weather")
+```
