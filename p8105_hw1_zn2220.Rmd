@@ -1,0 +1,12 @@
+---
+title: "p8105_hw1_zn2220"
+author: "Ziang Niu"
+date: "2025-09-19"
+output: git_document
+---
+
+```{r setup}
+library(moderndive)
+library(ggplot2)
+library(tidyverse)
+```
