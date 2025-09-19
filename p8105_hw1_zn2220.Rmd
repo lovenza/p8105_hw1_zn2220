@@ -55,3 +55,28 @@ Save it!
 ```{r echo=FALSE}
 ggsave("early_jan_weather_scatter.png", plot = sp)
 ```
+
+# Problem 2
+
+Create the data frame!
+
+```{r echo=FALSE}
+set.seed(3)
+
+normal_sample <- rnorm(10)
+
+logical_vector <- normal_sample > 0
+
+char_vector <- letters[1:10]
+
+factor_vector <- factor(sample(c("Level1", "Level2", "Level3"), 10, replace = TRUE))
+
+df <- data.frame(
+  NormalSample = normal_sample,
+  LogicalVector = logical_vector,
+  CharVector = char_vector,
+  FactorVector = factor_vector
+)
+
+df
+```
