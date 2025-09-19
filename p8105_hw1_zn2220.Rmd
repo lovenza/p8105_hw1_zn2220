@@ -91,3 +91,17 @@ FV <- mean(pull(tibble(df), FactorVector))
 ```
 
 It shows that the mean of NormalSample is `r NS` and LogicalVector is `r LV`. According to warnings, it fails to calculate the mean of CharVector and FactorVector.
+
+Let's turn them to numeric!
+
+```{r results='hide'}
+char_num <- as.numeric(factor(char_vector))
+
+char_num
+
+factor_num <- as.numeric(factor_vector)
+
+factor_num
+```
+
+Boolean variables are automatically converted to numeric in R, so their mean can be calculated directly. However, character and factor variables cannot. For characters, we need to define a mapping (for example, by converting them to factors), and factors already have internal codes, so we can apply the as.numeric() function directly.
