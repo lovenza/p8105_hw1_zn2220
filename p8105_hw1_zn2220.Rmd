@@ -16,3 +16,19 @@ library(tidyverse)
 ```{r echo=FALSE}
 data("early_january_weather")
 ```
+
+Here is a summary of the dataset, including the names and some indicators of the dataset.
+
+```{r}
+summary(early_january_weather)
+```
+
+It has `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
+
+Some head data can be shown here.
+
+```{r echo=FALSE}
+head(early_january_weather)
+```
+
+The mean temperature is `r mean(early_january_weather$temp, na.rm = TRUE)` °F.
