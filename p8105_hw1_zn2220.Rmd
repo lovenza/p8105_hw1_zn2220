@@ -80,3 +80,14 @@ df <- data.frame(
 
 df
 ```
+
+Trying to calculate the means of these data.
+
+```{r echo=FALSE, results='hide'}
+NS <- mean(pull(tibble(df), NormalSample))
+LV <- mean(pull(tibble(df), LogicalVector))
+CV <- mean(pull(tibble(df), CharVector))
+FV <- mean(pull(tibble(df), FactorVector))
+```
+
+It shows that the mean of NormalSample is `r NS` and LogicalVector is `r LV`. According to warnings, it fails to calculate the mean of CharVector and FactorVector.
