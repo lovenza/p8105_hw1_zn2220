@@ -32,3 +32,20 @@ head(early_january_weather)
 ```
 
 The mean temperature is `r mean(early_january_weather$temp, na.rm = TRUE)` °F.
+
+And the plot:
+
+```{r echo=FALSE, fig.keep = 'none'}
+sp <- ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) +
+  geom_point(alpha = 0.75) +
+  labs(
+    title = "Temperature vs Time",
+    x = "Time (hourly)",
+    y = "Temperature (°F)",
+    color = "Humidity"
+  ) +
+  theme_minimal()
+
+sp
+```
+
