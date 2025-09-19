@@ -49,3 +49,5 @@ sp <- ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid))
 sp
 ```
 
+The temperature rose overall, from a range of 25-40°F at the beginning of January to above 50°F around January 14th, before decreasing. There were also clear daily fluctuations, with a maximum and minimum temperature difference of approximately 5-15°F, especially during the first week. Humidity also increased, as indicated by the plot's points: the dark points on the left represent low humidity, while the lighter points on the right represent high humidity. Temperature and humidity are positively correlated, as the humidity rises with the temperature. On January 14th, both the temperature and humidity reached their peaks simultaneously.
+
